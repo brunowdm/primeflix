@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { toast } from "react-toastify";
 
-function Favoritos(){
+function Favoritos() {
     const [filmes, setFilmes] = useState([]);
 
     useEffect(() => {
@@ -12,7 +12,7 @@ function Favoritos(){
         setFilmes(JSON.parse(minhaLista) || []);
     }, [])
 
-    function excluirFilme(id){
+    function excluirFilme(id) {
         let filtroFilmes = filmes.filter((item) => {
             return (item.id != id);
         });
@@ -22,11 +22,18 @@ function Favoritos(){
         toast.success('Filme removido com sucesso!');
     }
 
-    return(
+    if (filmes.length === 0) {
+        return (
+            <div className='meus-filmes'>
+                <span>Você não possui nenhum filme salvo :(</span>
+                <Link to="/">Ver todos os filmes</Link>
+            </div>
+        )
+    }
+
+    return (
         <div className='meus-filmes'>
             <h1>Meus filmes</h1>
-
-            {filmes.length === 0 && <span>Você não possui nenhum filme salvo :(</span>}
 
             <ul>
                 {filmes.map((filme) => {

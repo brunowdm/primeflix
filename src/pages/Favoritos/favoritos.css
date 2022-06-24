@@ -36,3 +36,12 @@
     color: #116feb;
     margin-right: 14px;
 }
+
+.meus-filmes a{
+    text-decoration: none;
+    background-color: #116FEB;
+    color: #fff;
+    padding: 10px;
+    margin-top: 14px;
+    border-radius: 14px;
+}
