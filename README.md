@@ -4,9 +4,7 @@ Projeto para listar filmes em cartaz utilizando React e API TheMovieDB, para fin
 
 Desenvolvido durante o curso de React do professor Matheus Fraga, na Udemy.
 
-## Passo a passo para instalar:
-
-In the project directory, you can run:
+## Na raiz do projeto, executar os seguintes comandos:
 
 ### `npm install`
 ### `npm start`
