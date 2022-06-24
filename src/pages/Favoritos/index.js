@@ -24,7 +24,7 @@ function Favoritos() {
 
     if (filmes.length === 0) {
         return (
-            <div className='meus-filmes'>
+            <div className='nenhum-filme'>
                 <span>Você não possui nenhum filme salvo :(</span>
                 <Link to="/">Ver todos os filmes</Link>
             </div>
