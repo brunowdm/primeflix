@@ -4,6 +4,9 @@ Projeto para listar filmes em cartaz utilizando React e API TheMovieDB, para fin
 
 Desenvolvido durante o curso de React do professor Matheus Fraga, na Udemy.
 
+## Projeto rodando em :
+[https://primeflix.wdmsistemas.com.br/] (https://primeflix.wdmsistemas.com.br/)
+
 ## Na raiz do projeto, executar os seguintes comandos:
 
 ### `npm install`
